@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurgiMac Brands Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            background-color: #ffffff;
+            min-height: 100vh;
+            color: #1f2937;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .font-bold { font-weight: 700; }
+        .text-center { text-align: center; }
+        .mb-8 { margin-bottom: 2rem; }
+
+        .brand-section {
+            padding: 1rem 0rem;
+            background-color: white;
+            overflow: hidden;
+        }
+
+        .ticker-wrapper {
+            display: flex;
+            width: fit-content;
+            animation: ticker 40s linear infinite; 
+            gap: 2rem;
+        }
+        
+        .ticker-wrapper:hover {
+            animation-play-state: paused;
+        }
+
+        .brand-card {
+            flex-shrink: 0;
+            width: 250px;
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .brand-logo-container {
+            height: 100px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .brand-logo-container img {
+            max-height: 80px;
+            max-width: 100%;
+            object-fit: contain;
+            box-shadow: none;
+        }
+
+        .brand-info h4 {
+            font-size: 0.875rem;
+            color: #efb34c;
+            margin-bottom: 0.25rem;
+            font-weight: 700;
+        }
+
+        .brand-info p {
+            font-size: 0.75rem;
+            color: #6b7280;
+            line-height: 1.2;
+        }
+
+        @keyframes ticker {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); } 
+        }
+    </style>
+</head>
+<body>
+
+    <section class="brand-section">
+        <div class="container">
+            <h2 class="font-bold text-center mb-8">SurgiMac Family of <b style="color: #efb34c">Brands</b></h2>
+            <div class="ticker-wrapper">
+                
+                <!-- 1. Air Series -->
+                <div class="brand-card">
+                    <div class="brand-logo-container"><img src="./airseries.png" alt="Air Series"></div>
+                    <div class="brand-info">
+                        <h4>Air Series</h4>
+                        <p>Features ultra-lightweight, ergonomic handles designed to reduce hand and wrist fatigue during long procedures.</p>
+                    </div>
+                </div>
+
+                <!-- 2. Slim Series -->
+                <div class="brand-card">
+                    <div class="brand-logo-container"><img src="./slimseries.png" alt="Slim Series"></div>
+                    <div class="brand-info">
+                        <h4>Slim Series</h4>
+                        <p>Offers sleek, narrow profiles for superior maneuverability and tactile sensitivity in tight oral spaces.</p>
+                    </div>
+                </div>
+
+                <!-- 3. Hexa Series -->
+                <div class="brand-card">
+                    <div class="brand-logo-container"><img src="./hexa series.png" alt="Hexa Series"></div>
+                    <div class="brand-info">
+                        <h4>Hexa Series</h4>
+                        <p>Built with a unique hexagonal grip that provides excellent tactile feedback and slip resistance.</p>
+                    </div>
+                </div>
+
+                <!-- 4. Eco Series -->
+                <div class="brand-card">
+                    <div class="brand-logo-container"><img src="./ecoseries.png" alt="Eco Series"></div>
+                    <div class="brand-info">
+                        <h4>Eco Series</h4>
+                        <p>Crafted for sustainability using recyclable stainless steel and eco-conscious manufacturing processes.</p>
+                    </div>
+                </div>
+
+                <!-- 5. Pro Series -->
+                <div class="brand-card">
+                    <div class="brand-logo-container"><img src="./pro series.png" alt="Pro Series"></div>
+                    <div class="brand-info">
+                        <h4>Pro Series</h4>
+                        <p>Heavy-duty instruments designed for high-volume practices, combining refined ergonomics with superior durability.</p>
+                    </div>
+                </div>
+
+                <!-- 6. Titanium Black Series -->
+                <div class="brand-card">
+                    <div class="brand-logo-container"><img src="./titanium.png" alt="Titanium Black Series"></div>
+                    <div class="brand-info">
+                        <h4>Titanium Black Series</h4>
+                        <p>Utilizes non-reflective black coatings to reduce glare and eye strain under surgical lights.</p>
+                    </div>
+                </div>
+
+                <!-- 7. MacSafe -->
+                <div class="brand-card">
+                    <div class="brand-logo-container"><img src="./macsafe.png" alt="MacSafe"></div>
+                    <div class="brand-info">
+                        <h4>MacSafe</h4>
+                        <p>A collection of reliable personal protective equipment (PPE), including gloves, gowns, and face shields.</p>
+                    </div>
+                </div>
+
+                <!-- 8. MacSuture -->
+                <div class="brand-card">
+                    <div class="brand-logo-container"><img src="./macsuture.png" alt="MacSuture"></div>
+                    <div class="brand-info">
+                        <h4>MacSuture</h4>
+                        <p>High-precision, sterile surgical sutures available in both absorbable and non-absorbable varieties.</p>
+                    </div>
+                </div>
+
+                <!-- 9. MacCut -->
+                <div class="brand-card">
+                    <div class="brand-logo-container"><img src="./maccut.png" alt="MacCut"></div>
+                    <div class="brand-info">
+                        <h4>MacCut</h4>
+                        <p>Precision-engineered scalpel blades designed for clean incisions with minimal tissue drag.</p>
+                    </div>
+                </div>
+
+                <!-- 12. MacImpress -->
+                <div class="brand-card">
+                    <div class="brand-logo-container"><img src="./macimpress.png" alt="MacImpress"></div>
+                    <div class="brand-info">
+                        <h4>MacImpress</h4>
+                        <p>Impression materials engineered for exceptional dimensional stability and detail accuracy.</p>
+                    </div>
+                </div>
+
+                <!-- 13. AlgiMac -->
+                <div class="brand-card">
+                    <div class="brand-logo-container"><img src="./algimac.png" alt="AlgiMac"></div>
+                    <div class="brand-info">
+                        <h4>AlgiMac</h4>
+                        <p>A fast-setting, high-precision alginate solution for preliminary dental models.</p>
+                    </div>
+                </div>
+
+                <!-- 14. MacBite -->
+                <div class="brand-card">
+                    <div class="brand-logo-container"><img src="./macbite.png" alt="MacBite"></div>
+                    <div class="brand-info">
+                        <h4>MacBite</h4>
+                        <p>Restorative dental burs and bite registration materials designed for longevity and minimal distortion.</p>
+                    </div>
+                </div>
+
+                <!-- 15. MacPrevent -->
+                <div class="brand-card">
+                    <div class="brand-logo-container"><img src="./macprevent.png" alt="MacPrevent"></div>
+                    <div class="brand-info">
+                        <h4>MacPrevent</h4>
+                        <p>Providing advanced preventive care solutions for optimal oral health protection.</p>
+                    </div>
+                </div>
+
+                <!-- DUPLICATE FOR INFINITE LOOP -->
+
+                <div class="brand-card">
+                    <div class="brand-logo-container"><img src="./airseries.png" alt="Air Series"></div>
+                    <div class="brand-info">
+                        <h4>Air Series</h4>
+                        <p>Features ultra-lightweight, ergonomic handles designed to reduce hand and wrist fatigue during long procedures.</p>
+                    </div>
+                </div>
+
+                <div class="brand-card">
+                    <div class="brand-logo-container"><img src="./slimseries.png" alt="Slim Series"></div>
+                    <div class="brand-info">
+                        <h4>Slim Series</h4>
+                        <p>Offers sleek, narrow profiles for superior maneuverability and tactile sensitivity in tight oral spaces.</p>
+                    </div>
+                </div>
+
+                <div class="brand-card">
+                    <div class="brand-logo-container"><img src="./hexa series.png" alt="Hexa Series"></div>
+                    <div class="brand-info">
+                        <h4>Hexa Series</h4>
+                        <p>Built with a unique hexagonal grip that provides excellent tactile feedback and slip resistance.</p>
+                    </div>
+                </div>
+
+                <div class="brand-card">
+                    <div class="brand-logo-container"><img src="./ecoseries.png" alt="Eco Series"></div>
+                    <div class="brand-info">
+                        <h4>Eco Series</h4>
+                        <p>Crafted for sustainability using recyclable stainless steel and eco-conscious manufacturing processes.</p>
+                    </div>
+                </div>
+
+                <div class="brand-card">
+                    <div class="brand-logo-container"><img src="./pro series.png" alt="Pro Series"></div>
+                    <div class="brand-info">
+                        <h4>Pro Series</h4>
+                        <p>Heavy-duty instruments designed for high-volume practices, combining refined ergonomics with superior durability.</p>
+                    </div>
+                </div>
+
+                <div class="brand-card">
+                    <div class="brand-logo-container"><img src="./titanium.png" alt="Titanium Black Series"></div>
+                    <div class="brand-info">
+                        <h4>Titanium Black Series</h4>
+                        <p>Utilizes non-reflective black coatings to reduce glare and eye strain under surgical lights.</p>
+                    </div>
+                </div>
+
+                <div class="brand-card">
+                    <div class="brand-logo-container"><img src="./macsafe.png" alt="MacSafe"></div>
+                    <div class="brand-info">
+                        <h4>MacSafe</h4>
+                        <p>A collection of reliable personal protective equipment (PPE), including gloves, gowns, and face shields.</p>
+                    </div>
+                </div>
+
+                <div class="brand-card">
+                    <div class="brand-logo-container"><img src="./macsuture.png" alt="MacSuture"></div>
+                    <div class="brand-info">
+                        <h4>MacSuture</h4>
+                        <p>High-precision, sterile surgical sutures available in both absorbable and non-absorbable varieties.</p>
+                    </div>
+                </div>
+
+                <div class="brand-card">
+                    <div class="brand-logo-container"><img src="./maccut.png" alt="MacCut"></div>
+                    <div class="brand-info">
+                        <h4>MacCut</h4>
+                        <p>Precision-engineered scalpel blades designed for clean incisions with minimal tissue drag.</p>
+                    </div>
+                </div>
+
+                <div class="brand-card">
+                    <div class="brand-logo-container"><img src="./macimpress.png" alt="MacImpress"></div>
+                    <div class="brand-info">
+                        <h4>MacImpress</h4>
+                        <p>Impression materials engineered for exceptional dimensional stability and detail accuracy.</p>
+                    </div>
+                </div>
+
+                <div class="brand-card">
+                    <div class="brand-logo-container"><img src="./algimac.png" alt="AlgiMac"></div>
+                    <div class="brand-info">
+                        <h4>AlgiMac</h4>
+                        <p>A fast-setting, high-precision alginate solution for preliminary dental models.</p>
+                    </div>
+                </div>
+
+                <div class="brand-card">
+                    <div class="brand-logo-container"><img src="./macbite.png" alt="MacBite"></div>
+                    <div class="brand-info">
+                        <h4>MacBite</h4>
+                        <p>Restorative dental burs and bite registration materials designed for longevity and minimal distortion.</p>
+                    </div>
+                </div>
+
+                <div class="brand-card">
+                    <div class="brand-logo-container"><img src="./macprevent.png" alt="MacPrevent"></div>
+                    <div class="brand-info">
+                        <h4>MacPrevent</h4>
+                        <p>Providing advanced preventive care solutions for optimal oral health protection.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
